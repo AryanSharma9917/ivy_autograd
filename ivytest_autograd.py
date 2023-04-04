@@ -41,3 +41,8 @@ def test_ivy_autograd_tan(
                          frontend=frontend,
                          **as_variable,
                          **with_out)
+      
+      
+# This function creates an autograd tape using the GraphManagers API from Ivy, and then applies the ivy.tan operation to the input tensor ivy_x. 
+#It computes the gradients of the output tensor with respect to the input tensor using the autograd machinery from Ivy. Finally, it constructs a Container object 
+#with the input tensor and output gradients, and calls the assert_close function from the ivy_tests.helpers module to test the output of the function.
